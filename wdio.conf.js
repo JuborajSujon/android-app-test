@@ -1,3 +1,6 @@
+const path = require('path');
+
+
 exports.config = {
     //
     // ====================
@@ -53,10 +56,11 @@ exports.config = {
     capabilities: [{
         // capabilities for local Appium web tests on an Android Emulator
         platformName: 'Android',
-        browserName: 'Chrome',
-        'appium:deviceName': 'Android GoogleAPI Emulator',
-        'appium:platformVersion': '12.0',
-        'appium:automationName': 'UiAutomator2'
+        'appium:deviceName': 'Pixel 3',
+        'appium:automationName': 'UiAutomator2',
+        'appium:platformVersion': '11.0',
+        'appium:app': path.join(process.cwd(), './app/android/sample_app.apk'),
+        
     }],
 
     //
@@ -90,7 +94,7 @@ exports.config = {
     // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
-    // baseUrl: 'http://localhost:8080',
+    baseUrl: 'http://localhost',
     //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 10000,
