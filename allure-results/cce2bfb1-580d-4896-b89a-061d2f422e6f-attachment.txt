@@ -1,0 +1,10 @@
+{
+  "script": "<script> [14 bytes]",
+  "args": [
+    {
+      "direction": "down",
+      "strategy": "-android uiautomator",
+      "selector": "new UiSelector().text(\"Sauce Labs Fleece Jacket\")"
+    }
+  ]
+}

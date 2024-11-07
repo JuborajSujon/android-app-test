@@ -1,0 +1,10 @@
+{
+  "script": "<script> [14 bytes]",
+  "args": [
+    {
+      "direction": "up",
+      "strategy": "accessibility id",
+      "selector": "test-Username"
+    }
+  ]
+}
