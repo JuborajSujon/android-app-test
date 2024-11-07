@@ -1,4 +1,4 @@
-describe("Login Screen Scroll Test on Android", () => {
+describe("Loged Out User", () => {
   it("should scroll down and retrieve locked-out username and password", async () => {
     const usernameInput = await $("~test-Username");
     const passwordInput = await $("~test-Password");
@@ -46,6 +46,7 @@ describe("Login Screen Scroll Test on Android", () => {
 
     driver.pause(1000);
 
+    // Assert that login error message is displayed
     const errorMessage = await $(
       '//android.widget.TextView[@text="Sorry, this user has been locked out."]'
     );
